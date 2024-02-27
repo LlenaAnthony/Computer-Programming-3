@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 import java.net.Socket;
 import java.util.Scanner;
-public class SampleClient1 {
+public class  SampleClient1 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         int port = 2000;

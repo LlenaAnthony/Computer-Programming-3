@@ -13,14 +13,18 @@ public class SampleServer1 {
     public static void main(String[] args) {
         int port = 2000;
         try (
-                ServerSocket serverSocket = new ServerSocket(port);
-                Socket clientSocket = serverSocket.accept();
+               ServerSocket serverSocket = new ServerSocket (port);
+               Socket clientSocket = serverSocket.accept();
 
-                BufferedReader streamRdr = new BufferedReader(
-                        new InputStreamReader(clientSocket.getInputStream()));
+               BufferedReader streamRdr = new BufferedReader(
+                       new InputStreamReader(clientSocket.getInputStream())
+               );
 
-                PrintWriter streamWtr = new PrintWriter(
-                        clientSocket.getOutputStream(), true);
+               PrintWriter streamWtr = new PrintWriter(
+                       clientSocket.getOutputStream(), true)
+
+
+
         ){
 
             // server send
